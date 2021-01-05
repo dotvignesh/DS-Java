@@ -18,15 +18,15 @@ public class LinkedList {
 	Node head;
 	
 //	Insert element at the end of the linked list
-	public LinkedList insert(LinkedList list, int data) {
+	public void insert(int data) {
 		
 		Node newNode = new Node(data);
 		
-		if (list.head == null) {
-			list.head = newNode;
+		if (head == null) {
+			head = newNode;
 		} else {
 			
-			Node lastNode = list.head;
+			Node lastNode = head;
 			while (lastNode.next != null) {
 				lastNode = lastNode.next;
 			}
@@ -35,13 +35,12 @@ public class LinkedList {
 			
 		}
 		
-		return list;
 	}
 	
 //	Print all elements of linked list
-	public void printList(LinkedList list) {
+	public void printList() {
 		
-		Node currNode = list.head;
+		Node currNode = head;
 		
 		System.out.print("Linked list: ");
 		while (currNode != null) {
@@ -53,17 +52,16 @@ public class LinkedList {
 	}
 	
 //	Delete given element from linked list
-	public LinkedList delete(LinkedList list, int key) {
+	public void delete(int key) {
 		
-		Node currNode = list.head;
-		Node prev = null;
+		Node currNode = head, prev = null;
 		
 //		Looking at head node
 		if (currNode != null && currNode.data == key) {
-			list.head = currNode.next;
+			head = currNode.next;
 			System.out.println(key +" was found at head and is deleted from the list.");
 			
-			return list;
+			return;
 		}
 		
 //		Looking for key at loc other than head and keeping track of prev node
@@ -79,25 +77,22 @@ public class LinkedList {
 			prev.next = currNode.next;
 			System.out.println(key +" was found and deleted from the list.");
 			
-			return list;
+			return;
 			
 		} else {
 			System.out.println(key +" was not found in the list.");	
 		}
 		
-		
-		return list;
-		
 	}
 	
 //	Delete element at given index
-	public LinkedList deleteAt(LinkedList list, int index) {
+	public void deleteAt(int index) {
 		
-		Node currNode = list.head, prev = null;
+		Node currNode = head, prev = null;
 		
 		if (index == 0) {
-			list.head = currNode.next;
-			return list;
+			head = currNode.next;
+			return;
 		}
 		
 		int counter = 0;
@@ -107,7 +102,9 @@ public class LinkedList {
 			if (index == counter) {
 				
 				prev.next = currNode.next;
-				return list;
+				
+				System.out.println("Element at " + index + " has been deleted from the list.");
+				return;
 				
 			} else {
 				
@@ -120,8 +117,7 @@ public class LinkedList {
 		}
 		
 		System.out.println("There's no element at index " + index);
-		
-		return list;
+
 	}
 
 }

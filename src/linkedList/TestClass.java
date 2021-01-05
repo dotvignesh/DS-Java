@@ -7,17 +7,15 @@ public class TestClass {
 		LinkedList list = new LinkedList();
 		
 		for (int i=1; i<=10; i++) {
-			list.insert(list, i);
+			list.insert(i);
 		}
 		
-		list.delete(list, 8);
-		list.delete(list, 9);
+		list.delete(9);
+		list.delete(8);
 		
-		list.printList(list);
-		
-		System.out.println();
-		list.deleteAt(list, 2);
-		list.printList(list);
+		list.deleteAt(2);
+		list.deleteAt(1);
+		list.printList();
 
 	}
 

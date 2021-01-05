@@ -2,6 +2,7 @@ package linkedList;
 
 public class DLL {
 	
+//	Defining a node for DLL
 	static class Node {
 		
 		int data;
@@ -15,6 +16,24 @@ public class DLL {
 		}
 		
 	}
+	
+	Node head;
+	
+//	Pushing at the start of the list
+	public void push(int data) {
+		
+		Node newNode = new Node(data);
+		
+		newNode.next = head;
+		if (head != null) {
+			head.prev = newNode;
+		}
+		
+		head = newNode;
+		
+	}
+	
+	
 	
 	
 
