@@ -5,5 +5,5 @@ https://www.geeksforgeeks.org/how-to-implement-our-own-dynamic-array-class-in-ja
 
 
 ## Linked List
-https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/
-https://www.geeksforgeeks.org/doubly-linked-list/
+Singly linked list: https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/
+Doubly linked list: https://www.geeksforgeeks.org/doubly-linked-list/
