@@ -10,4 +10,9 @@ https://www.geeksforgeeks.org/how-to-implement-our-own-dynamic-array-class-in-ja
 <li>Doubly linked list: https://www.geeksforgeeks.org/doubly-linked-list/
 </ul>
 
+## Stacks
+https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
+
+<em>Other resources: https://youtu.be/RBSGKlAvoiM </em>
+
 <em>Work in progress...</em>
