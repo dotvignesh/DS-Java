@@ -4,14 +4,16 @@ public class TestClass {
 
 	public static void main(String[] args) {
 		
-		Stack s = new Stack();
+		StackLL s = new StackLL();
 		
-		for (int i=0; i<999; i++) {
-			s.push(i+1);
+		for (int i=1; i<=5; i++) {
+			s.push(i);
 		}
 		
-		s.push(1);
-		s.push(0);
+		System.out.println(s.peek() + " is in the top of the stack");
+		System.out.println(s.pop() + " has been popped from the stack");
+		System.out.println(s.peek() + " is in the top of the stack");
+		
 //		System.out.println(s.pop() + " popped from stack");
 //		System.out.println(s.pop() + " popped from stack");
 
