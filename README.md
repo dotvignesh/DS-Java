@@ -13,6 +13,9 @@ https://www.geeksforgeeks.org/how-to-implement-our-own-dynamic-array-class-in-ja
 ## Stacks
 https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
 
+## Queues 
+https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/ 
+
 <em>Other resources: https://youtu.be/RBSGKlAvoiM </em>
 
 <em>Work in progress...</em>
