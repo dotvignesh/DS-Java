@@ -16,6 +16,9 @@ https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
 ## Queues 
 https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/ 
 
+## Priority Queue
+https://www.geeksforgeeks.org/priority-queue-using-linked-list/
+
 <em>Other resources: https://youtu.be/RBSGKlAvoiM </em>
 
 <em>Work in progress...</em>
