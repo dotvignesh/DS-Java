@@ -4,28 +4,23 @@ public class TestClass {
 
 	public static void main(String[] args) {
 		
-		Queue q = new Queue(10);
-		
-		for (int i=1; i<=10; i++) {
-			q.enqueue(i);
-		}
-		
-		System.out.println("Is full? " + q.isFull());
-		
-		q.print();
-		
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		
+		QueueLL q = new QueueLL();
 		q.enqueue(5);
+		q.enqueue(10);
+		q.enqueue(15);
+		q.enqueue(20);
 		
 		q.print();
 		
-		System.out.println("Size: " + q.size);
+		q.dequeue();
+		q.dequeue();
+		
+		q.print();
+		
+		q.dequeue();
+		q.dequeue();
+		
+		System.out.println("Is empty? " + q.isEmpty());
 //		
 	}
 
